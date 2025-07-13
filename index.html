@@ -504,5 +504,18 @@
         // Initialize the game
         init();
     </script>
+        <!-- In-Page Push (After Game Over) -->
+<script>
+  function showAdOnGameOver() {
+    propellerAd({ type: "in-page-push", id: YOUR_IPP_ID });
+  }
+</script>
+
+<!-- Left Sidebar Banner -->
+<div style="position: fixed; left: 0; top: 20%;">
+  <script>
+    propellerAd({ type: "display", id: YOUR_BANNER_ID, width: 160, height: 600 });
+  </script>
+</div>
 </body>
 </html>
